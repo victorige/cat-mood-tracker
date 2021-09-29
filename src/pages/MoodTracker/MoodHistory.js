@@ -4,6 +4,12 @@ import "./MoodTracker.scss";
 const MoodHistory = ({
     moodHistory
 }) => {
+
+    const formatDate = (date) => {
+        // this convert the date to the required format and replaces single digits to double digits
+        return `${('0' + date.getDate()).slice(-2)}-${('0' + date.getMonth()).slice(-2)}-${date.getFullYear()} / ${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)}`;
+    }
+
     return (
         <div className="column">
 
@@ -33,7 +39,7 @@ const MoodHistory = ({
                                     {item.text}
                                 </div>
                                 <time className="text text__date text--gray">
-                                    {item.date}
+                                    {formatDate(item.date)}
                                 </time>
                             </div>
                         </div>
