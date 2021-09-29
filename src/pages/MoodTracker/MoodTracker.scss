@@ -1,0 +1,266 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 110px;
+    background-color: #ffffff;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 50%;
+}
+
+@media (max-width: 800px) {
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+      flex: 100%;
+    }
+}
+
+.section__left {
+    justify-content: center;
+    margin: 0 0 110px 0;
+}
+
+.section__right {
+    align-items: center;
+    flex-direction: column;
+    margin: 28px 0 110px 0;
+}
+
+.card {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.card--mood-picker {
+    align-items: center;
+    justify-content: center;
+    width: 464px;
+    height: 577px;
+    border: 1px solid #C4C4C4;
+    border-radius: 15px; 
+}
+
+.card--no-history {
+    width: 345px;
+    height: 264px;
+    border: 1px solid #EFEEEE;
+    border-radius: 5px; 
+    margin-top: 42px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card--items-history {
+    width: 479px;
+    height: 85px;
+    border-radius: 5px; 
+    margin-top: 12px;
+    background: rgba(243, 244, 246, 0.7);
+    align-items: center;
+}
+
+.card--item-border-green {
+    border: 1px solid #1D9A39;
+}
+
+.card--item-border-orange {
+    border: 1px solid #FF9635;
+}
+
+.card--item-border-red {
+    border: 1px solid #F93131;
+}
+
+.image {
+    position: relative;
+}
+
+.image--mood-picker {
+    width: 94px;
+    height: 79px;
+    margin-bottom: 22px;
+}
+
+.image--history {
+    width: 49px;
+    height: 41px;
+    margin-bottom: 22px;
+}
+
+.image--grayscale {
+    width: 72px;
+    height: 61px;
+    margin-bottom: 22px;
+}
+
+.image__catbackground {
+    background: url("../../images/catBackground.png") no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: right;
+}
+
+.text {
+    font-family: Nunito;
+    font-style: normal;
+}
+
+.text__question {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.text__header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: #35100C;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.text__mood-history {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(53, 16, 12, 0.5);
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.text__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 12px;
+}
+
+.text__date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 12px;
+}
+
+.text__mood-picker {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 12px;
+    margin-top: 16px;
+}
+
+.text__no-history {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #AFAAA8;
+    text-align: center;
+}
+
+.text--green {
+    color: #1D9A39;
+}
+
+.text--orange {
+    color: #FF9635;
+}
+
+.text--red {
+    color: #F93131;
+}
+
+.text--gray {
+    color: #C4C4C4;
+}
+
+.text--grey {
+    color: #898583;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container__emoji {
+    width: 55px;
+    height: 55px;
+    background: rgba(175, 170, 168, 0.2);
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 30px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.container__emoji-filled {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 26px;
+    margin-left: 21px;
+}
+
+.container--emoji-fill-green {
+    background: rgba(50, 194, 82, 0.2);
+    border: 2px solid #32C252;
+}
+
+.container--emoji-fill-orange {
+    background: rgba(255, 150, 53, 0.2);
+    border: 2px solid #FF9635;
+}
+
+.container--emoji-fill-red {
+    background: rgba(249, 49, 49, 0.1);
+    border: 2px solid #F93131;
+}
+
+.button {
+    width: 134px;
+    height: 41px;
+    border-radius: 5px;
+    border: none;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.button--unactive {
+    background: #EFEEEE;
+    margin-top: 66px;
+    color: #FFFFFF;
+}
+
+.button--active {
+    background: #120C35;
+    margin-top: 44px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
